@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100vw;
+	background: white;
+	border: 0.1 solid black;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div.linner {
+	height: 50vh;
+	width: 33.3vw;
+	border: 0.2vw solid white;
+	margin: 0 auto;
+	background: url(./HW_090518_background.jpg) no-repeat;	
+
+	background-size: cover;
+	background-position: center;
+}
+
+.content {
+	height: 50vh;
+	width: 33.3vw;
+	position: absolute;
+}
+
+.name {
+	height: 6vh;
+	width: 20vw;
+	margin: 0.1vw;
+	font-size: 3vw;
+	font-family: 'Podkova', serif;
+	color: white;
+	position: relative;
+	top: 3vh;
+	left: 2vw;
+	background-color: rgba(107, 92, 92, 0.5);
+}
+
+.text {
+	font-size: 1.5vw;
+	font-family: 'Podkova', serif;
+	height: 37vh;
+	width: 20vw;
+	padding: 1vh;
+	margin: 0.1vw;
+	position: relative;
+	top: 3vh;
+	left: 2vw;
+	overflow: hidden;
+	color: white;
+	background-color: rgba(61, 52, 52, 0.6);
+}
+
+.buy {
+	position: relative;
+	bottom: 40vh;
+	left: 23.3vw;
+}
+
+.button {
+	color: white;
+	font-size: 1.5vw;
+	font-family: 'Podkova', serif;
+	text-transform: uppercase;
+	background-color: gray;
+	border: 0.1vw solid gray;
+	height: 2.55vw;
+	width: 6.9vw;
+}
+
+.button::after {
+    content: ''; 
+    position: absolute; 
+   	top: 0vh; 	/* Положение треугольника */
+	left: 6.9vw; /* Положение треугольника */
+    border: 1.26vw solid transparent; /* Прозрачные границы */
+    border-left: 2vw solid gray; /* Добавляем треугольник */
+   }
+
+
+.price {
+	height: 4vh;
+	width: 8vw;
+	position: relative;
+	bottom: 8vh;
+	left: 24vw;
+	color: white;
+	font-size: 3vw;
+	font-family: 'Podkova', serif;
+}
