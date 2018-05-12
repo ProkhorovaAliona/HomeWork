@@ -25,7 +25,7 @@ div.linner {
 .content {
 	height: 50vh;
 	width: 33.3vw;
-	position: absolute;
+	position: relative;
 }
 
 .name {
@@ -35,7 +35,7 @@ div.linner {
 	font-size: 3vw;
 	font-family: 'Podkova', serif;
 	color: white;
-	position: relative;
+	position: absolute;
 	top: 3vh;
 	left: 2vw;
 	background-color: rgba(107, 92, 92, 0.5);
@@ -48,8 +48,8 @@ div.linner {
 	width: 20vw;
 	padding: 1vh;
 	margin: 0.1vw;
-	position: relative;
-	top: 3vh;
+	position: absolute;
+	top: 9vh;
 	left: 2vw;
 	overflow: hidden;
 	color: white;
@@ -57,7 +57,7 @@ div.linner {
 }
 
 .buy {
-	position: relative;
+	position: absolute;
 	bottom: 40vh;
 	left: 23.3vw;
 }
@@ -86,10 +86,17 @@ div.linner {
 .price {
 	height: 4vh;
 	width: 8vw;
-	position: relative;
+	position: absolute;
 	bottom: 8vh;
 	left: 24vw;
 	color: white;
 	font-size: 3vw;
 	font-family: 'Podkova', serif;
 }
+
+.forms {
+	position: absolute;
+	bottom: 7vh;
+	left: 2vw;
+}
+
