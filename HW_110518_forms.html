@@ -1,16 +1,118 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Forms </title>
+	<title> Girl of your dream </title>
 	<meta charset="utf8">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 </head>
 <body>
 	<div class="forms">
 		<form>
-			<input type="text">
-			<input type="checkbox">
-			<input type="radio">
+			<ol>
+				<h1> Step 1 </h1>
+				<h2> Enter the details to contact you: </h2>
+				<li>
+					<label> Name: </label>
+					<input type="text" placeholder="How can I call you?">
+				</li>
+				<li>
+					<label> E-mail: </label>
+					<input type="email" placeholder="youremail@gmail.com" required>
+				</li>
+				<li>
+					<label> Phone number: </label>
+					<input type="tel" placeholder="+380__ __ __ ___" required>
+				</li>
+				<li>
+					<label> Password: </label>
+					<input type="password" placeholder="Stop-Word">
+				</li>
+				<li>
+					Save <input type="checkbox" checked> 
+				</li>
+
+				<h1> Step 2 </h1>
+				<h2> Choose your favorite features: </h2>
+				<li>
+					<label> Height: 
+						<input type="number" min="130" max="190" step="1" placeholder="168">
+					</label>
+					<label> Weight: 
+						<input type="number" min="30" max="199" step="1" placeholder="50">
+					</label>
+					<label> Bust size:
+						<input type="number" min="0" max="8" step="1" placeholder="2">
+					</label>
+				</li>
+				<li>
+					<label> Hair color:
+						<select>
+							<option>Brown-haired</option>
+							<option>Brunette</option>
+							<option>Blonde</option>
+							<option>Red-haired</option>
+						</select>
+					</label>
+				</li>
+				<li>
+					<lable> Marital status: </lable>
+					<lable>
+						<input type="radio" name="status">
+						Single
+					</lable>
+					<lable>
+						<input type="radio" name="status">
+						Merried
+					</lable>
+					<lable>
+						<input type="radio" name="status">
+						Divorced
+					</lable>
+					<label>
+						<input type="radio" name="status">
+						Widow
+					</label>
+				</li>
+				<li>
+					<label> Qualities:
+						<select multiple>
+							<option>Wisdom</option>
+							<option>Beauty</option>
+							<option>Kindness</option>
+							<option>Education</option>
+							<option>Passion</option>
+							<option>Sexuality</option>
+							<option>Sense of humor</option>
+						</select>
+					</label>
+				</li>
+				<li>
+					<label> Upload the photo example of girl:
+						<input type="file">
+					</label>
+				</li>
+				<li>
+					<label> Enter your favorive web-site:
+						<input type="url" placeholder="xxx.com">
+					</label>
+				</li>
+				<li>
+					<label> Your special preferences </label>
+						<textarea placeholder="Do not be shy!"></textarea>
+				</li>
+
+				<h1> Step 3 </h1>
+				<h2>Confirmation:</h2>
+				<li>
+					<label>
+  						<input type="checkbox" required> 
+  						<a href="*"> I agree with the conditions </a>
+					</label>
+				</li>
+				<li>
+					<input type="submit" value="Order the delivery from Universe">
+				</li>
+			</ol>
 		</form>
 	</div>
 </body>
