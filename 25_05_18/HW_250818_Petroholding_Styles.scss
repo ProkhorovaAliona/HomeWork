@@ -1,0 +1,452 @@
+
+
+body { margin: 0; 
+	}
+
+/* Container for all content */
+content { 
+    width: 100vw;
+    margin: 0vw;
+	padding: 0;
+	background: white;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center; 
+	align-items: center;
+	align-content: center;
+   }
+
+/* Common container for top menu */
+nav {
+ 	width: 100vw;
+ 	height: 6.45vw;
+    display: flex;
+    flex-direction: row;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	text-align: center;	
+
+ /* Styles for company's logo */
+ .logo {
+	width: 46vw;
+	height: 5.28vw;
+	background: url(./emblem.svg) no-repeat;
+	background-size: contain;
+	background-position: left;
+	display: inline-block;
+
+ }
+
+ /* Common container for navigation */
+.navigation {
+	margin: 0;
+	padding: 0;
+	width: 53vw;
+   height: 6.45vw;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   box-sizing: border-box;
+
+}
+
+/* Reset styles for list of navigation */
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;	
+}
+
+/* Styles for every navigation items */
+a {
+	display: inline-block;
+	border-bottom: 0.5vw solid transparent;
+	padding-bottom: 1vw;
+ 	margin: 0 1vw 0 0;
+  	font-size: 1.36vw;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #7d8c9b;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* underscore the current tab*/
+a.current {
+	border-bottom: 0.5vw solid #fbcc00;
+} 
+
+/* underline when hovering */
+a:hover {
+	border-bottom: 0.5vw solid #88CAD5;
+}
+
+ }
+
+
+/*___________________________________________________*/
+
+/*Filter Groups of cards*/
+.groups {
+	width: 100vw;
+	height: 6.4vw;
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+	 background-color: #f7f5e6;
+	 
+/* Groups of cards - text style */
+.gray_text {
+	font-size: 2.56vw;
+	color: #5a6772;
+ 	font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    margin: 0 2vw 0;
+}
+
+}
+
+
+/*____________________________________________________*/
+
+/*All cards is here */
+.container {
+	width: 100vw;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+
+/*Style for 4 main card */
+div.cards {
+	position: relative;
+
+}
+
+/*Style for every first card*/
+.cards.blue {
+ 	width: 50vw;
+ 	height: 41.2vw;
+ 	margin: 0;
+ 	padding: 0;
+
+ }
+
+.blue {
+	background: url(./blue.svg) no-repeat;	
+	background-size: cover;
+	background-position: center;
+}
+
+/*Style for every second card*/
+.cards.violet {
+	width: 50vw;
+ 	height: 41.2vw;
+ 	margin: 0;
+ 	padding: 0;
+
+ }
+
+ .violet {
+	background: url(./violet.svg) no-repeat;
+	background-size: cover;
+	background-position: center;	
+}
+
+/* */
+.cards.marine {
+ 	width: 50vw;
+ 	height: 20.64vw;
+ 	margin: 0;
+ 	padding: 0;
+
+ }
+
+.marine {
+	background: url(./marine.svg) no-repeat;
+	background-size: cover;
+	background-position: center;	
+}
+
+/* */
+.cards.bright {
+	width: 50vw;
+ 	height: 20.64vw;
+ 	margin: 0;
+ 	padding: 0;
+
+ }
+
+.bright {
+	background: url(./bright.svg) no-repeat;
+	background-size: cover;
+	background-position: center;	
+}
+
+/* .cards div:hover {
+ background-color: blue;
+}
+*/
+/*____________________________________________________*/
+
+
+
+.name {
+	height: 2.48vw;
+	border-radius: 0.5vw;
+	margin: 0.1vw;
+	font-size: 1.2vw;
+	font-weight: 700;
+	font-family: 'Source Sans Pro', sans-serif;
+	position: absolute;
+	top: 3vw;
+	left: 2vw;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cards .blue .name {
+	width: 12.16vw;
+	color: white;
+	background-color: #058cff;
+}
+
+.cards .violet .name {
+	width: 14.24vw;
+	color: white;
+	background-color: #db28b3;
+}
+
+.cards .marine .name {
+	width: 13.68vw;
+	color: white;
+	background-color: #02828e;
+}
+
+.cards.bright .name {
+	width: 13.6vw;
+	color: #5a6772;
+	background-color: #ffffff;
+}
+
+.cards .type {
+	position: absolute;
+	top: 8vw;
+	left: 2vw;
+	width: 16vw;
+	height: 12vw;
+	font-size: 4vw;
+	font-weight: 700;
+	color: white;
+	text-shadow: 1px 1px 0 rgba(0, 11, 48, 0.28);
+	text-transform: uppercase;
+
+}
+
+.card .marine .type {
+
+width: 337px;
+height: 38px;
+text-shadow: 1px 1px 0 rgba(0, 11, 48, 0.28);
+color: #fefefe;
+font-size: 42px;
+font-weight: 700;
+}
+
+.cards.bright .type {
+	font-size: 2vw;
+	color: #5a6772;
+}
+
+.cards .description {
+	font-size: 1.5vw;
+	font-family: 'Source Sans Pro', sans-serif;
+	height: 37vw;
+	width: 20vw;
+	padding: 1vw;
+	margin: 0.1vw;
+	position: absolute;
+	top: 16vw;
+	left: 2vw;
+	overflow: hidden;
+	color: white;
+}
+
+.cards.bright .description {
+	color: #5a6772;
+}
+
+.buy {
+	position: absolute;
+	top: 4.8vw;
+	right: 4.4vw;
+}
+
+.button {
+	color: white;
+	font-size: 1.5vw;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	background-color: #22b0d9;
+	border: 0.1vw solid #22b0d9;
+	height: 3.92vw;
+	width: 11.36vw;
+	border-radius: 0.5vw;
+}
+
+ /* Треугольная кнопка
+	div.buy .button::after {
+    content: ''; 
+    position: absolute; 
+   	top: 0vw; 	Положение треугольника
+	left: 7.7vw;  Положение треугольника 
+    border: 2vw solid transparent; Прозрачные границы 
+    border-left: 2.8vw solid #22b0d9;  Добавляем треугольник 
+
+ 	content: '';
+	position: absolute;
+	right: 37px;
+	top: 64.5px;
+	display: inline-block;
+	width: 50px;
+	height: 47px;
+    background: linear-gradient(-45deg, rgba(22, 117, 171, 1), rgba(66, 208, 235, 1));
+	transform: rotate(45deg);
+	border-radius: 16px 8px 16px 8px;
+
+   } 
+   */
+
+.price {
+	height: 2.5vw;
+	width: 8vw;
+	position: absolute;
+	bottom: 4vw;
+	right: 6vw;
+	color: black;
+	font-size: 2vw;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #f5c600;
+	border-radius: 0.5vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+/*____________________*/
+
+section.slider {
+	width: 100vw;
+	height: 45vw;
+	background-size: cover;
+	background-position: center;
+	background: url(./slider.svg) no-repeat;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative;
+
+}
+
+.slider .text {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	color: #ffffff;
+	position: absolute;
+	top: 3vw;
+}
+
+.text {
+	display: flex;
+	align-content: center;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 3vw;
+}
+
+h3 {
+	width: 40vw;
+}
+
+.text {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+div.slider .button {
+	position: absolute;
+	top: 25vw;
+	left: 20vw;
+}
+
+.next {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: absolute;
+	top: 5vw;
+	right: 2vw;
+}
+
+.circle {
+	width: 1vw;
+	height: 1vw;
+	border: 0.2vw solid #ffffff;
+	border-radius: 50%;
+	margin: 2vw 2vw 2vw;
+
+}
+
+.circle:hover {
+	background-color: #f5c800;
+}
+
+.timer {
+	background: url(./timer.svg) no-repeat;
+	background-size: contain;
+	width: 5vw;
+	height: 5vw;
+	position: absolute;
+	bottom: 0vw;
+	left: 93.4vw;	
+}
+
+.calendar {
+	width: 100vw;
+	height: 80vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	.gray_text {
+		/* Style for "РАСПИСАНИЕ" */
+		width: 411px;
+		height: 39px;
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.24);
+		color: #5a6772;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 42px;
+		font-weight: 400;
+		line-height: 51px;
+		position: relative;
+	}
+
+	.filter {
+		position: absolute;
+		left: 4vw;
+
+	}
+}
