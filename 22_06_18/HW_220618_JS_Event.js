@@ -1,12 +1,10 @@
 
+let elURL = document.querySelector('.input');
+let elSubmit = document.querySelector('.button');
+let elShowImg = document.querySelector('.screen');
 
-let elURL = document.querySelector('.ImgURL');
-let elSubmit = document.querySelector('.submit');
-let elShowImg = document.querySelector('.ShowImg');
+elSubmit.addEventListener('click', function(){
+	elShowImg.src = elURL.value;
+})
 
-let clickUpload = function(ev){
-	let getURL = elURL.innerHTML;
-	console.log(getURL);
-}
 
-elSubmit.addEventListener('click', clickUpload);
