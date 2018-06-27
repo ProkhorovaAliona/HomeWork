@@ -1,0 +1,20 @@
+
+.wrap{
+	width: 90vw;
+	height: 50vw;
+	border: 0.1vw solid black;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+span {
+	width: 60vw;
+	height: 6vw;
+	border:1px solid black;
+	margin: 1vw;
+}
+
