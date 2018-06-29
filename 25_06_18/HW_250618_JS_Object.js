@@ -5,16 +5,16 @@ let person = {
 	initial: {
 		name: 'Aliona',
 		surname: 'Prokhorova',
-		getName: () => {
-			return this.name + ' ' + this.surname
+		getName: function getFllName() {
+			return `${this.name} ${this.surname}`
 		}
 	},
 	date: {
 		year: 1993,
 		month: 05,
 		day: 31,
-		getAge: () => {
-			return today.getFullYear() - this.year
+		getAge: function getDate() {
+			return today.getFullYear() - `${this.year}`
 		}
 	}
 }
