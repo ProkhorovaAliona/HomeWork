@@ -11,6 +11,7 @@ const staticDir = config.get('httpServer:staticDir');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const formRouter = require('./routes/form');
+const jsonRoute = require('./routes/jsonResponse');
 
 const app = express();
 
@@ -33,6 +34,7 @@ app.use(express.static(staticDir));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/form', formRouter);
+app.use('/jsonResponse', jsonRoute);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
