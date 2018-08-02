@@ -1,23 +1,23 @@
 const btn = document.querySelector('#getJSON');
-const xhr = new XMLHttpRequest();
-let req = xhr.open('GET', '/jsonResponse', true);
-req.onprogress = function(e) {
-    let complete = (e.position / e.totalSize)*100;
-    console.log(`${complete}`)
-}
-req.onload = function(data) {
-    let responseBody = xhz.responseText;
-    let data = JSON.parse(responseBody);
-}
 
-req.onerror = function(err){
-    console.warn(Error);
-}
+btn.addEventListener('click', function(ev) {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', '/test', true);
+    xhr.send();
 
-xhr.setRequestHeader('Content-Type','application/json');
-req.send();
+    xhr.onreadystatechange = ()=>{
+        let responseBody = xhr.responseText;
+        console.log(responseBody);
 
-    
+    }
+
+
+  });
+
+
+
+
+ 
 
 
 
