@@ -31,7 +31,7 @@ btn.addEventListener('click', function(ev) {
       .then(function(test) {
         console.log(test.age); // iliakan
       })
-      .catch( console.log );
+      .catch((err)=>console.log('Error:' + err));
 });
 
  
